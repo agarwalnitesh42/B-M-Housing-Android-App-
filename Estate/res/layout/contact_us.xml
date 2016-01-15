@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/imfp"
+   
+    android:orientation="vertical" >
+
+    <!-- enter phone number -->
+
+    <TextView
+        android:id="@+id/enterphoneno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@id/enterphoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:phoneNumber="true" />
+
+    <!-- enter sms -->
+
+    <TextView
+        android:id="@+id/textViewSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter SMS:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/textViewSms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="2" />
+
+    <!-- send button -->
+
+    <Button
+        android:id="@+id/buttonsend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+    
+    
+    <!-- email send form -->
+    <!-- enter email address -->
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:id="@+id/editTextTo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress">
+    
+    <requestFocus/>
+    </EditText>
+    
+    
+    <!-- subject of email -->
+   <TextView
+       android:id="@+id/textViewSubject"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Subject:"
+       android:textAppearance="?android:attr/textAppearanceLarge"/>
+   
+   <EditText
+       android:id="@+id/editTextSubject"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"/>
+   
+   <!-- message to be passed in email -->
+   
+    <TextView android:id="@+id/textViewMessage"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Message"
+     android:textAppearance="?android:attr/textAppearanceLarge"/>
+    
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top" 
+        android:inputType="textMultiLine"
+        android:lines="2"/>
+    
+    
+    <!-- button of sending email -->
+    
+    <Button
+        android:id="@+id/buttonSendmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"/>
+    
+    <Button 
+        android:id="@+id/btnweb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Website"/>
+        
+        
+    
+    
+    
+
+</LinearLayout>
